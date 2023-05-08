@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+body{
+  background-color: #1b2055;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.box {
+  position: absolute;
+  top: 0;
+  transform: rotate(80deg); 
+  left: 0;
+}
+
+.wave {
+  position: absolute;
+  opacity: .4;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%;
+  z-index: 1;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+.wave.-one {
+  animation: rotate 7000ms infinite linear;
+  opacity: 0.2;
+  background: #78acc6;
+}
+
+.wave.-two {
+  animation: rotate 3000ms infinite linear;
+  opacity: 0.5;
+  background: #c0d1eb;
+}
+
+.wave.-three {
+  animation: rotate 7500ms infinite linear;
+  background-color: #f1ff00 ;
+  opacity: 0.7;
+}
+.top-menu{
+width: 5%;
+height: 40%;
+background-color: white;
+z-index: 5;
+position: relative;
+top: 200px;
+
+
+}
+ul{
+  list-style: none;
+}
+
+.mndv{
+background-image: url(./images/bg.jpg);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+        }
+        .div1{
+            position: fixed;
+            background-color: #f8f6f2;
+            width: 35%;
+            height: 564px;
+            margin: 3.5% 12%;
+            border-radius: 5px;
+        }
+        .circleimg{
+            height: 35%;
+            width: 40%;
+            margin: 30% 30%;
+            position: absolute;
+            background-image: url(./images/mypic1.jpg);
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: top;
+    background-size: cover;
+    border: 5px;
+    border-style: solid;
+border-color: rgb(14, 8, 60);
+        }
+
+        .nme{
+            color: black;
+            text-align: center;
+           margin-top: 22%;
+           font-size: 225%;
+        }
+        
+    .js{ 
+        color: #ff9800;
+ text-decoration: none;
+ font-size: 50%;
+}
+.js:hover{
+    color: #f8f6f2;
+}
+.divalg{
+    margin-left: 35.5%;
+    margin-top: 3%;
+}
+.hwbtn{
+    height: 14%;
+    width: 14%;
+    color: rgb(0, 0, 0);
+}
+.hwbtn:hover{
+ 
+    color:#ff9800;
+}
+.btndv{
+    margin-top: 5%;
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+.btnindv{
+    width: 50%;
+    height: 100%;
+    background-color:   #f8f6f2;
+    border: 1px;
+    border-color: #19191f;
+    border-right-style: inset;
+    border-top-style: outset;
+    color: black;
+}
+.btnindv1{
+    width: 50%;
+    height: 100%;
+    background-color: #f8f6f2;
+    border: 1px;
+    border-color: #19191f;
+    border-top-style: outset;
+    color: black;
+}
+.imgbtn{
+    height: 50%;
+    width: 14%;
+    margin-left: 5%;
+}
+.a1{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+}
+.a1:hover{
+    color: #ff9800;
+   
+}
+.icn{
+ margin-left: 4px;
+}
+.icn:hover{
+    margin-left: 8px;
+}
+
+.sddiv{
+    position: fixed;
+            background-color: #f8f6f2;
+            width: 4%;
+            height: 270px;
+            margin: 5.8% 4.8%;
+            border-radius: 5px;
+            z-index: 8;
+            display: block;
+     
+}
+ </style>
+</head>
+<body>
+    <div class='box'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+    </div>
+    
+       <!--Side Div Starts Here-->
+<div class="sddiv">
+<ul class="">
+    <li><img src="./images/about.png" > </li>
+    <li><img src="./images/resume.png"> </li>
+    <li> <img src="./images/contact.png"> </li>
+    </ul>
+
+    </div>
+
+        <!-- Center Div Starts Here-->
+        <div class="div1">
+            <a href="#0">
+            <div class="circleimg">
+            </div>
+        </a>
+       <div class="mndv">
+       </div>
+         <!-- Center Div Background image and Circle Image End's Here-->
+    
+       <div>
+        <h1 class="nme">Soniya Parmar<br>
+            <a href="" class="typewrite js" data-period="2000"
+                data-type='[ "WEB DESIGNER", "PROGRAMMER", "CODER"]'>
+                <span class="wrap"></span>
+            </a>
+        </h1>
+          <!-- Js Code End's Here -->
+    
+    
+        <div class="divalg">
+            <a href="#"><i class="hwbtn fa-brands fa-facebook fa-xl"></i></a>
+            <a href="#"><i class="hwbtn fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#"><i class="hwbtn fa-brands fa-twitter fa-xl"></i></a>
+            <a href="#"><i class="hwbtn fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+    
+          <!-- Center Div Social's Icon End's Here-->
+       </div>
+    
+    
+       <div class="btndv">
+    <button class="btnindv"><a class="a1" href="#">DOWNLOAD CV <i class="icn fa-solid fa-download fa-beat"></i></a></button>
+    <button class="btnindv1"><a class="a1" href="#">CONTACT ME <i class="icn fa-brands fa-telegram fa-xl"></i></a></button>
+    </div>
+    <!-- Center Div Buttons End's Here-->
+    
+    </div>
+      <!-- Center Div End's Here-->
+    
+    
+    <script>
+     var TxtType = function(el, toRotate, period) {
+     this.toRotate = toRotate;
+     this.el = el;
+     this.loopNum = 0;
+     this.period = parseInt(period, 10) || 2000;
+     this.txt = '';
+     this.tick();
+     this.isDeleting = false;
+    };
+    
+    TxtType.prototype.tick = function() {
+     var i = this.loopNum % this.toRotate.length;
+     var fullTxt = this.toRotate[i];
+    
+     if (this.isDeleting) {
+     this.txt = fullTxt.substring(0, this.txt.length - 1);
+     } else {
+     this.txt = fullTxt.substring(0, this.txt.length + 1);
+     }
+    
+     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+     var that = this;
+     var delta = 200 - Math.random() * 100;
+    
+     if (this.isDeleting) { delta /= 2; }
+    
+     if (!this.isDeleting && this.txt === fullTxt) {
+     delta = this.period;
+     this.isDeleting = true;
+     } else if (this.isDeleting && this.txt === '') {
+     this.isDeleting = false;
+     this.loopNum++;
+     delta = 500;
+     }
+    
+     setTimeout(function() {
+     that.tick();
+     }, delta);
+    };
+    
+    window.onload = function() {
+     var elements = document.getElementsByClassName('typewrite');
+     for (var i=0; i<elements.length; i++) {
+         var toRotate = elements[i].getAttribute('data-type');
+         var period = elements[i].getAttribute('data-period');
+         if (toRotate) {
+           new TxtType(elements[i], JSON.parse(toRotate), period);
+         }
+     }
+     // INJECT CSS
+     var css = document.createElement("style");
+     css.type = "text/css";
+     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+     document.body.appendChild(css);
+    };
+    </script>
+</body>
+</html>
